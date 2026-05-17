@@ -10,20 +10,20 @@ const parser = new Parser();
 
 const FEEDS = {
   'Stack Technique': [
-    'https://vercel.com/blog/feed',
-    'https://supabase.com/blog/rss.xml',
-    'https://nextcloud.com/blog/feed/',
-    'https://tailwind-extensions.vercel.app/rss.xml',
-    'https://react.dev/rss.xml',
-    'https://github.blog/feed/',
+    'https://www.journaldunet.com/solutions/dsi/rss/',
+    'https://www.lemondeinformatique.fr/flux-rss/thematique/developpement/flux.xml',
+    'https://www.nextinpact.com/rss/news.xml',
+    'https://dev.to/feed/tag/french',
+    'https://blog.clever-cloud.com/fr/feed/',
+    'https://www.it-connect.fr/feed/',
   ],
   'RGPD & Souveraineté': [
     'https://www.cnil.fr/fr/rss.xml',
     'https://www.ssi.gouv.fr/feed/',
-    'https://blog.ovhcloud.com/feed/',
-    'https://www.scaleway.com/en/blog/feed/',
-    'https://krebsonsecurity.com/feed/',
-    'https://www.schneier.com/feed/atom/',
+    'https://blog.ovhcloud.com/fr/feed/',
+    'https://www.scaleway.com/fr/blog/feed/',
+    'https://www.numerama.com/cyberguerre/feed/',
+    'https://www.linformaticien.com/rss.xml',
   ],
 };
 
