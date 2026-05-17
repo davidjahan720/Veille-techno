@@ -7,22 +7,13 @@ const mistral = new Mistral({ apiKey: process.env.MISTRAL_API_KEY });
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const FEEDS = {
-  Frontend: [
-    'https://frontendmasters.com/blog/feed/',
-    'https://web.dev/feed.xml',
-    'https://css-tricks.com/feed/',
-    'https://overreacted.io/rss.xml',
-  ],
-  Backend: [
-    'https://news.ycombinator.com/rss',
-    'http://feeds.feedburner.com/HighScalability',
-    'https://martinfowler.com/feed.atom',
-    'https://thevaluable.dev/rss.xml',
-  ],
-  'Cloud & DevOps': [
-    'https://feed.infoq.com/',
-    'https://aws.amazon.com/blogs/aws/feed/',
-    'https://cloud.google.com/feeds/gcp-release-notes.xml',
+  'Stack Technique': [
+    'https://vercel.com/blog/feed',
+    'https://supabase.com/blog/rss.xml',
+    'https://nextcloud.com/blog/feed/',
+    'https://tailwind-extensions.vercel.app/rss.xml',
+    'https://react.dev/rss.xml',
+    'https://github.blog/feed/',
   ],
   'RGPD & Souveraineté': [
     'https://www.cnil.fr/fr/rss.xml',

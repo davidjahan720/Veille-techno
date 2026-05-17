@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Layout, Globe, Server, Cloud, Shield, RefreshCcw, ExternalLink } from 'lucide-react';
+import { Layout, Shield, Cpu, RefreshCcw, ExternalLink } from 'lucide-react';
 import { format } from 'date-fns';
 import { fr } from 'date-fns/locale';
 
 const categories = [
   { name: 'All', icon: Layout },
-  { name: 'Frontend', icon: Globe },
-  { name: 'Backend', icon: Server },
-  { name: 'Cloud & DevOps', icon: Cloud },
+  { name: 'Stack Technique', icon: Cpu },
   { name: 'RGPD & Souveraineté', icon: Shield },
 ];
 
