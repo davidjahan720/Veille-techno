@@ -20,7 +20,7 @@ function App() {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/rss`);
+      const response = await fetch('/api/rss');
       if (!response.ok) throw new Error('Failed to fetch RSS feeds');
       const data = await response.json();
       setItems(data);
