@@ -1,6 +1,6 @@
-const express = require('express');
-const cors = require('cors');
-const Parser = require('rss-parser');
+import express from 'express';
+import cors from 'cors';
+import Parser from 'rss-parser';
 
 const app = express();
 app.use(cors());
@@ -71,4 +71,4 @@ app.get('/api/rss', async (req, res) => {
   }
 });
 
-module.exports = app;
+export default app;

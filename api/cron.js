@@ -1,6 +1,6 @@
-const { Mistral } = require('@mistralai/mistralai');
-const { Resend } = require('resend');
-const Parser = require('rss-parser');
+import { Mistral } from '@mistralai/mistralai';
+import { Resend } from 'resend';
+import Parser from 'rss-parser';
 
 const parser = new Parser();
 const mistral = new Mistral({ apiKey: process.env.MISTRAL_API_KEY });
@@ -34,12 +34,7 @@ const FEEDS = {
   ],
 };
 
-module.exports = async (req, res) => {
-  // Optional security: verify cron secret if you add one
-  // if (req.headers.authorization !== `Bearer ${process.env.CRON_SECRET}`) {
-  //   return res.status(401).end('Unauthorized');
-  // }
-
+export default async (req, res) => {
   try {
     let summaryContent = '';
     const today = new Date();
